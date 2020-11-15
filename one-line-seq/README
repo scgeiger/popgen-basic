@@ -1,0 +1,5 @@
+This script requires a fasta file (containing one or more sequences)
+and will return a new file in which each seqID and each entire sequence
+is on its own line. It has been tested, and seems to work sufficiently well.
+
+Verified 20200107.

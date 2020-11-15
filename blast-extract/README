@@ -1,0 +1,20 @@
+This code takes blast outformat 6, containing sequence IDs and the coordinates
+for a blast hit. With this information and the location of the original fasta
+files, the exact DNA sequence at these sites is then excised and saved as a 
+separate file. 
+
+Notably, this also allows for the extraction of the surrounding region of a BLAST hit. 
+This buffer can be specified.
+
+If a filename can not be found or is "." (an odd occurance, but it does happen), then the filename
+is saved to a separate file and is saved as .err. 
+
+If the extracted region extends past the total sequence length, the program will die.
+
+INDEXING:
+
+All coordinates are assumed to be fed to the program on index of 1
+Coordinates will be adjusted to index 0 (subtraction of 1).
+
+
+Verified 20200107
